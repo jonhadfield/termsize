@@ -1,5 +1,7 @@
 module github.com/jonhadfield/termsize
 
-go 1.14
+go 1.26.0
 
-require golang.org/x/crypto v0.0.0-20200323165209-0ec3e9974c59
+require golang.org/x/term v0.46.0
+
+require golang.org/x/sys v0.48.0 // indirect
