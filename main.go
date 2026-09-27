@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"golang.org/x/crypto/ssh/terminal"
+	"golang.org/x/term"
 )
 
 func main() {
-	w, h, err := terminal.GetSize(0)
+	w, h, err := term.GetSize(0)
 	if err != nil {
 		fmt.Println("failed to get terminal size")
 		os.Exit(1)
